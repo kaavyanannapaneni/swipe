@@ -65,6 +65,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 main {
@@ -301,9 +302,8 @@ p {
 }
 /* GRADIENT CANVAS */
 #gradient-canvas {
-  /* background-color: #00d4ff; */
   height: 1000px;
-  width: 200%;
+  width: 150%;
   position: absolute;
   top: -700px;
   left: -50%;
@@ -769,4 +769,100 @@ main {
 .footer h3 {
   font-size: var(--h6-size);
   font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 870px) {
+  .partners-grid img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 788px) {
+  :root {
+    --h1-size: 64px;
+    --h1-height: 72px;
+    --h3-size: 34px;
+  }
+  .payment-text h2 {
+    width: 100%;
+  }
+  .integration-section {
+    padding: calc(var(--spacing-xlg)) 0;
+  }
+
+  .integration-section::before {
+    height: 750px;
+    top: -40px;
+  }
+  .integration-section .two-columns {
+    flex-direction: column;
+  }
+  .integration-section .two-columns .col-left {
+    width: 100%;
+  }
+  .integration-section .two-columns .col-right {
+    width: 100%;
+    display: none;
+  }
+  /* WHY SWIPE */
+  .why-swipe-section {
+    padding: calc(var(--spacing-xlg) * 2) 0;
+  }
+
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .why-swipe-section .card-container .card {
+    padding: 0 var(--spacing-sm) 0 0;
+    width: 50%;
+  }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 480px) {
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .two-columns {
+    flex-direction: column;
+  }
+  .two-columns .col-left {
+    width: 100%;
+  }
+  .two-columns .col-right {
+    width: 100%;
+    padding: 0;
+  }
+  .payment-text h2 {
+    width: 100%;
+  }
+  /* WHY SWIPE */
+  .why-swipe-section {
+    padding: var(--spacing-xlg) 0;
+  }
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .why-swipe-section .card-container .card {
+    padding: 0 var(--spacing-sm) 0 0;
+    width: 100%;
+  }
+
+  .why-swipe-section .card-container .card img {
+    height: 36px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .section-container {
+    padding: 0 var(--spacing-md);
+    width: 100%;
+  }
 }
