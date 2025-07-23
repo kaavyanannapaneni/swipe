@@ -53,6 +53,7 @@
   );
 }
 
+/* General Styles */
 body,
 html {
   width: 100%;
@@ -88,13 +89,6 @@ h1 {
 }
 
 h2 {
-  /* font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: var(--h2-size);
-  margin: 0;
-  width: 100%;
-  letter-spacing: -0.25px;
-  line-height: var(--h2-height); */
   font-family: var(--heading-font);
   font-weight: 600;
   font-size: var(--h3-size);
@@ -144,10 +138,6 @@ h6 {
   line-height: var(--subtitle-height);
   transition: color 0.2s ease;
 }
-
-/* .subtitle:hover {
-  color: var(--primary-accent);
-} */
 
 .subtitle2 {
   color: var(--blue-1);
@@ -364,7 +354,6 @@ main {
 }
 
 /* PARTNERS SECTION */
-
 .partners-section {
   margin: var(--spacing-xlg) 0;
   width: 100%;
@@ -470,9 +459,7 @@ main {
 }
 
 /* INTEGRATIONS */
-
 .integration-section {
-  /* background-color: var(--primary-accent); */
   color: var(--text-light);
   width: 100%;
   display: flex;
@@ -610,13 +597,6 @@ main {
   box-sizing: border-box;
 }
 
-/* .events::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
 .events button {
   background-color: var(--purple-1);
   margin: var(--spacing-lg) 0 0 0;
@@ -720,6 +700,7 @@ main {
 .getting-started-section .col-right button {
   color: var(--purple-2);
 }
+
 /* Footer */
 .footer {
   width: 100%;
@@ -785,7 +766,7 @@ main {
   font-weight: 700;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE LAYOUTS*/
 @media only screen and (max-width: 1100px) {
   .section-container {
     padding: 0 var(--spacing-md);
@@ -845,12 +826,15 @@ main {
     height: 550px;
     transform: translate(32px, -32px);
   }
+  /* GRAPHIC SECTION */
   .graphic-section {
     padding: var(--spacing-xlg) 0;
   }
+  /* Payment Section */
   .payment-text h2 {
     width: 100%;
   }
+  /* Integration Section */
   .integration-section {
     padding: calc(var(--spacing-xlg)) 0;
   }
@@ -882,6 +866,7 @@ main {
     padding: 0 var(--spacing-sm) 0 0;
     width: 50%;
   }
+  /* Global Section  */
   .global-section {
     padding: var(--spacing-xlg) 0;
   }
@@ -894,7 +879,6 @@ main {
     padding: 0;
     margin: 0;
   }
-
   #globe {
     opacity: 10%;
   }
@@ -913,9 +897,7 @@ main {
   #gradient-canvas {
     top: -800px;
   }
-  .partners-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+
   .two-columns {
     flex-direction: column;
   }
@@ -947,19 +929,25 @@ main {
   .hero .col-left {
     padding: 0;
   }
+  /* Partners Section */
   .partners-section {
     margin: var(--spacing-xlg) 0;
   }
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
-  .getting-started-section .with-icon{
+  .getting-started-section .with-icon {
     align-items: flex-start;
   }
+  /* Payment Section */
   .payment-section {
     padding: var(--spacing-lg) 0;
   }
   .payment-text h2 {
     width: 100%;
   }
+  /* Integration Section */
   .integration-section {
     padding: calc(var(--spacing-md)) 0;
   }
@@ -980,6 +968,7 @@ main {
     height: 36px;
     margin: 0 0 var(--spacing-sm) 0;
   }
+  /* Global Section */
   .global-section {
     padding: calc(var(--spacing-lg)) 0;
   }
@@ -999,6 +988,7 @@ main {
     opacity: 10%;
   }
 
+  /* Virtual events */
   .events {
     padding: calc(var(--spacing-lg)) 0;
   }
@@ -1007,6 +997,7 @@ main {
     height: 380px;
     margin: var(--spacing-lg) 0 var(--spacing-md) 0;
   }
+  /* Getting Started Section */
   .getting-started-section {
     box-sizing: border-box;
   }
@@ -1029,6 +1020,7 @@ main {
   .getting-started-section .col-right img {
     margin: 0 0 var(--spacing-md) 0;
   }
+  /* Footer Section */
   .footer {
     padding: var(--spacing-lg) 0;
   }
