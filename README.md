@@ -1,4 +1,4 @@
-###### A version of the "Swipe Project" created as a part of The HTML CSS Bootcamp 2025 Edition by Colt Steele. 
+###### A modified version of "Swipe" created as a part of Colt Steele Course. 
 [Swipe](https://kaavyanannapaneni.github.io/swipe/)
 
 
